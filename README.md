@@ -8,3 +8,4 @@ This repository has the purpose to show, in action, topics related to Concurrenc
 ## Summary
 1. [Introduction](./01_introduction/README.md)
 2. [Go Routines](./02_goroutines/README.md)
+2. [Channels](./03_channels/README.md)

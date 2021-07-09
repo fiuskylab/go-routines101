@@ -1,8 +1,10 @@
 ### Goroutines
 
-References
-    - [Go Doc](https://golang.org/doc/effective_go#goroutines)
-    - [GoByExample](https://gobyexample.com/goroutines)
+#### References
+- [Go Doc](https://golang.org/doc/effective_go#goroutines)
+- [GoByExample](https://gobyexample.com/goroutines)
+
+#### About
 
 Go eases the way to execute a function concurrently, with a simple syntax:
 ```golang
@@ -64,6 +66,8 @@ func main() {
 	wg.Wait()
 }
 ```
+
+#### Example
 
 Now a pratical example, the following example the program will try to ping various websites, concurrently:
 ```golang

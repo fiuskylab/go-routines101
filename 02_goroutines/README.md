@@ -23,7 +23,11 @@ func main() {
 
 If you run the code above, it won't print a thing, because the "f() function" continued running in the background concurrently, so the "main() scope" ended before the start of the goroutine.
 
-So, to fix it, we'll need to import a package called [sync](https://golang.org/pkg/sync/), it provides us basic tools to manage our routines; implementing it the code will look like this:
+So, there's two possible options to fix it
+    1. (__NOT RECOMMENDED__) Use a `time.Sleep()` to wait for the execution of all goroutines
+    2. (Recommended) we'll need to import a package called [sync](https://golang.org/pkg/sync/).
+
+The __sync__ it provides us basic tools to manage our routines; implementing it in the code will look like this:
 ```golang
 package main
 

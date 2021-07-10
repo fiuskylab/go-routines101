@@ -3,9 +3,9 @@
 #### Summary
 1. [References](#references)
 2. [Introduction](#introduction)
-    1. [Example 1](#example-1)
+    1. [Example 1](#example-1.1)
 3. [Buffering](#buffering)
-    1. [Example 2](#example-2)
+    1. [Example 2](#example-2.1)
 4. [](#)
 5. [](#)
 6. [](#)
@@ -27,7 +27,7 @@ Channels follows the following template for declaration:
     - _make(chan type)_ - You should use _make_, and the _type_ is any type, can even be another channels, we'll see this example at [Example 2](#example-2)
 
 
-##### Example 1
+##### Example 1.1
 Simple example of a channel receiving a string
 ```golang
 func main() {
@@ -64,7 +64,7 @@ cj := make(chan int, 0)         // unbuffered channel of integers
 cs := make(chan *os.File, 100)  // buffered channel of pointers to Files
 ```
 
-##### Example 2
+##### Example 2.1
 
 ```golang
 // Factorial function

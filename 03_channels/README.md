@@ -10,6 +10,8 @@
     1. [Example 3.1](#example-3.1)
 5. [Channel Directions](#channel-directions)
     1. [Example 4.1](#example-4.1)
+6. [Select](#select)
+    1. [Example 5.1](#example-5.1)
 6. [](#)
 7. [](#)
 8. [](#)
@@ -177,9 +179,14 @@ func TestConcurrent(t *testing.T) {
 ```
 
 #### Channel directions
-Channels as _function parameters_ can have directions:
+- Channels as _function parameters_ can have directions:
     - `f(myChannel <-chan T)` - _myChannel_ will only be able to __receive__ values
     - `f(myChannel chan<- T)` - _myChannel_ will only be able to __send__ values
+- More about it at:
+    - [GoByExample - Channel Directions](https://gobyexample.com/channel-directions)
+    - [GolangR](https://golangr.com/channel-directions/)
+    - [GolangByExample](https://golangbyexample.com/channel-direction-go/)
+
 
 ##### Example 4.1
 ```golang
@@ -221,3 +228,15 @@ func main() {
 }
 ```
 
+#### Select 
+- More about it at:
+    - [Tour Golang](https://tour.golang.org/concurrency/5)
+    - [YourBasic](https://yourbasic.org/golang/select-explained/)
+    - [GoByExample](https://gobyexample.com/select)
+    - [GolangDocs](https://golangdocs.com/select-statement-in-golang)
+
+The `select` statement is used to choose from multiple send/receive channel operations, it blocks until one of the send/receive operations is ready. If multiple operations are ready, one of them is chosen at random.
+
+##### Example 5.1
+```golang
+```
